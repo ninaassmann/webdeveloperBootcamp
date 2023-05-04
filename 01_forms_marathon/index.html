@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDB - forms - Race Regiatration</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <form action="">
+        <div>
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" required>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <span>Select a Race</span>
+            <p>
+                <input type="radio" name="race" id="fun" value="fun" checked>
+                <label for="fun">Fun Run 5k</label>
+            </p>
+            <p>
+                <input type="radio" name="race" id="half" value="half">
+                <label for="half">Half Marathon</label>
+            </p>
+            <p>
+                <input type="radio" name="race" id="full" value="full">
+                <label for="full">Full Marathon</label>
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="here comes your mail adress" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="at least 8 char" minlength="8"
+                    required>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="ageGroup">Select Age Grou</label>
+                <select name="ageGroup" id="ageGroup">
+                    <option value="5k" name="ageGroup">under 18</option>
+                    <option value="half" name="ageGroup">19 - 30</option>
+                    <option value="full" name="ageGroup">30 +</option>
+                </select>
+            </p>
+        </div>
+        <button>Register</button>
+    </form>
+</body>
+
+</html>
